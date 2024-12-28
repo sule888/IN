@@ -1,12 +1,12 @@
 @font-face {
-  src: url("src/fonts/Amaranth/Amaranth-Regular.ttf") format("truetype");
+  src: url("@/fonts/Amaranth/Amaranth-Regular.ttf") format("truetype");
   font-family: "Amaranth";
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  src: url("src/fonts/Lekton/Lekton-Regular.ttf") format("truetype");
+  src: url("@/fonts/Lekton/Lekton-Regular.ttf") format("truetype");
   font-family: "Lekton";
   font-weight: normal;
   font-style: normal;

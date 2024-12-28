@@ -48,25 +48,25 @@ const icons = [
 ];
 const itemsAboutUs = [
   {
-    img: "src/imgs/madre-con-hija-estudiando.jpg",
+    img: "@/imgs/madre-con-hija-estudiando.jpg",
     alt: "Madre estudiando con su hija",
     text: "",
     class: "img1",
   },
   {
-    img: "src/imgs/reconocimiento-familia.jpg",
+    img: "@/imgs/reconocimiento-familia.jpg",
     alt: "Foto de reconocimiento en familia",
     text: "",
     class: "  ",
   },
   {
-    img: "src/imgs/familias-en-piscina.jpg",
+    img: "@/imgs/familias-en-piscina.jpg",
     alt: "Familias en piscina",
     text: "",
     class: "img3",
   },
   {
-    img: "src/imgs/nino-armando-compecabezas.jpg",
+    img: "@/imgs/nino-armando-compecabezas.jpg",
     alt: "",
     text: "",
     class: "img4",
@@ -137,7 +137,7 @@ const toggleCont = (index) => {
 const servicesCards = [
   {
     title: "Estimulacion del lenguaje",
-    img: "src/imgs/img-web/estimulacion-del-lenguaje.jpg",
+    img: "@/imgs/img-web/estimulacion-del-lenguaje.jpg",
     alt: "Estimulacion del lenguaje",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. est ridiculus vulputate.Maecenas maecenas accumsan ultricies lobortis fusce primis. Parturient aenean duis aliquet habitasse; felis lobortis congue. Sapien inceptos lobortis fringilla porta quis mattis orci ornare vel. ",
     file: "",
@@ -157,7 +157,7 @@ const servicesCards = [
 
   {
     title: "TEA",
-    img: "src/imgs/img-web/estimulacion-del-lenguaje.jpg",
+    img: "@/imgs/img-web/estimulacion-del-lenguaje.jpg",
     alt: "Estimulacion del lenguaje",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. est ridiculus vulputate.Maecenas maecenas accumsan ultricies lobortis fusce primis. Parturient aenean duis aliquet habitasse; felis lobortis congue. Sapien inceptos lobortis fringilla porta quis mattis orci ornare vel. ",
     file: "",
@@ -176,7 +176,7 @@ const servicesCards = [
   },
   {
     title: "TDHA",
-    img: "src/imgs/img-web/estimulacion-del-lenguaje.jpg",
+    img: "@/imgs/img-web/estimulacion-del-lenguaje.jpg",
     alt: "Estimulacion del lenguaje",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     file: "",
@@ -195,7 +195,7 @@ const servicesCards = [
   },
   {
     title: "TDA",
-    img: "src/imgs/img-web/estimulacion-del-lenguaje.jpg",
+    img: "@/imgs/img-web/estimulacion-del-lenguaje.jpg",
     alt: "Estimulacion del lenguaje",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     file: "",
@@ -214,7 +214,7 @@ const servicesCards = [
   },
   {
     title: "Gestion Emocional",
-    img: "src/imgs/img-web/estimulacion-del-lenguaje.jpg",
+    img: "@/imgs/img-web/estimulacion-del-lenguaje.jpg",
     alt: "Estimulacion del lenguaje",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     file: "",
@@ -233,7 +233,7 @@ const servicesCards = [
   },
   {
     title: "Entrenamiento neurologico para concentracion y memoria",
-    img: "src/imgs/img-web/estimulacion-del-lenguaje.jpg",
+    img: "@/imgs/img-web/estimulacion-del-lenguaje.jpg",
     alt: "Estimulacion del lenguaje",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     file: "",
@@ -252,7 +252,7 @@ const servicesCards = [
   },
   {
     title: "Lectura, Escritura y Matematicas",
-    img: "src/imgs/img-web/estimulacion-del-lenguaje.jpg",
+    img: "@/imgs/img-web/estimulacion-del-lenguaje.jpg",
     alt: "Estimulacion del lenguaje",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     file: "",
@@ -273,43 +273,43 @@ const servicesCards = [
 let videos = [
   {
     preview:
-      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
-    video: "src/videos/SampleVideo_1280x720_1mb.mp4",
+      "@/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "@/videos/SampleVideo_1280x720_1mb.mp4",
   },
   {
     preview:
-      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
-    video: "src/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4",
+      "@/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "@/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4",
   },
   {
     preview:
-      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
-    video: "src/videos/SampleVideo_1280x720_1mb.mp4",
+      "@/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "@/videos/SampleVideo_1280x720_1mb.mp4",
   },
   {
     preview:
-      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
-    video: "src/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4",
+      "@/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "@/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4",
   },
   {
     preview:
-      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
-    video: "src/videos/SampleVideo_1280x720_1mb.mp4",
+      "@/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "@/videos/SampleVideo_1280x720_1mb.mp4",
   },
   {
     preview:
-      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
-    video: "src/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4",
+      "@/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "@/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4",
   },
   {
     preview:
-      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
-    video: "src/videos/SampleVideo_1280x720_1mb.mp4",
+      "@/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "@/videos/SampleVideo_1280x720_1mb.mp4",
   },
   {
     preview:
-      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
-    video: "src/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4",
+      "@/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "@/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4",
   },
 ];
 
@@ -404,7 +404,7 @@ function copyToClipboard() {
 <template>
   <div class="main-cont">
     <section class="cont-hero">
-      <img src="/src/imgs/Heroimg.png" alt="Hero " />
+      <img src="@/imgs/Heroimg.png" alt="Hero " />
 
       <div class="cont-hero-text">
         <h1 class="hero">Centro Humanista IN</h1>
@@ -605,7 +605,7 @@ function copyToClipboard() {
 
     <section class="backgroud-cont-experience">
       <div class="cont-experience">
-        <img src="/src/imgs/experience-profile.png" alt="" />
+        <img src="@/imgs/experience-profile.png" alt="" />
         <div class="text-experience-cont">
           <h4>Lorem ipsum dolor sit</h4>
           <h1>Clay Gonzalez</h1>
@@ -643,7 +643,7 @@ function copyToClipboard() {
             </p>
             <a
               target="_blank"
-              href="https://www.google.com.mx/maps/search/Calle+Rep%C3%BAblica+de+Cuba+653+sur+y+Ave.+Insurgentes.+Col.+Ex-Hip%C3%B3dromo.+32330+Ciudad+Ju%C3%A1rez,+M%C3%A9xico/@31.7321784,-106.4643818,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
+              href="https://www.google.com.mx/maps/search/Calle+Rep%C3%BAblica+de+Cuba+653+sur+y+Ave.+Insurgentes.+Col.+Ex-Hip%C3%B3dromo.+32330+Ciudad+Ju%C3%A1rez,+M%C3%A9xico@31.7321784,-106.4643818,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
               ><button class="btn primary-button">
                 Abrir en Google Maps
               </button></a
@@ -698,7 +698,7 @@ function copyToClipboard() {
           <div class="upper">
             <div class="child-cont">
               <img
-                src="/src/imgs/main-logo.png"
+                src="@/imgs/main-logo.png"
                 alt="Logo Cenrto Humanista"
                 class="logo"
               />
@@ -706,7 +706,7 @@ function copyToClipboard() {
             </div>
             <div class="child-cont">
               <img
-                src="/src/imgs/mantarrallas-logo.png"
+                src="@/imgs/mantarrallas-logo.png"
                 alt="Mantarrallas Club Logo"
                 class="logo"
               />
@@ -999,23 +999,23 @@ function copyToClipboard() {
 }
 
 .bg-image-1::before {
-  background-image: url("src/imgs/img-web/estimulacion-del-lenguaje.jpg");
+  background-image: url("@/imgs/img-web/estimulacion-del-lenguaje.jpg");
 }
 
 .bg-image-2::before {
   flex: 1;
-  background-image: url("src/imgs/img-web/familia2.jpeg");
+  background-image: url("@/imgs/img-web/familia2.jpeg");
 }
 
 .bg-image-3::before {
   flex: 1;
-  background-image: url("src/imgs/img-web/familia 3.jpeg");
+  background-image: url("@/imgs/img-web/familia 3.jpeg");
 }
 
 .bg-image-4::before {
   flex: 1;
 
-  background-image: url("src/imgs/img-web/nino-con-jugue4tes.jpg");
+  background-image: url("@/imgs/img-web/nino-con-jugue4tes.jpg");
 }
 
 .content {
