@@ -1,84 +1,134 @@
 <script setup>
-import { ref } from 'vue';
-import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
-import { faWhatsapp, faFacebook, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons';
-import { faCalendar, faChevronDown, faEnvelopeCircleCheck, faEnvelopeOpen, faFileSignature, faLocation, faLocationDot, faMailBulk, faMailForward, faPeopleGroup, faPhone, faPlay, faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { ref } from "vue";
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+import {
+  faWhatsapp,
+  faFacebook,
+  faYoutube,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faCalendar,
+  faChevronDown,
+  faEnvelopeCircleCheck,
+  faEnvelopeOpen,
+  faFileSignature,
+  faLocation,
+  faLocationDot,
+  faMailBulk,
+  faMailForward,
+  faPeopleGroup,
+  faPhone,
+  faPlay,
+  faSquareEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
 const icons = [
-  { name: faWhatsapp, href: 'https://www.facebook.com/InteligenciainfantilIN', title: 'Whatsapp' },
-  { name: faFacebook, href: 'https://www.facebook.com/InteligenciainfantilIN', title: 'Facebook' },
-  { name: faYoutube, href: 'https://www.facebook.com/InteligenciainfantilIN', title: 'Youtube' },
-  { name: faTiktok, href: 'https://www.facebook.com/InteligenciainfantilIN', title: 'Tikok' }
+  {
+    name: faWhatsapp,
+    href: "https://www.facebook.com/InteligenciainfantilIN",
+    title: "Whatsapp",
+  },
+  {
+    name: faFacebook,
+    href: "https://www.facebook.com/InteligenciainfantilIN",
+    title: "Facebook",
+  },
+  {
+    name: faYoutube,
+    href: "https://www.facebook.com/InteligenciainfantilIN",
+    title: "Youtube",
+  },
+  {
+    name: faTiktok,
+    href: "https://www.facebook.com/InteligenciainfantilIN",
+    title: "Tikok",
+  },
 ];
 const itemsAboutUs = [
   {
-    img: 'src/imgs/madre-con-hija-estudiando.jpg',
-    alt: 'Madre estudiando con su hija',
-    text: '',
-    class: 'img1'
+    img: "src/imgs/madre-con-hija-estudiando.jpg",
+    alt: "Madre estudiando con su hija",
+    text: "",
+    class: "img1",
   },
   {
-    img: 'src/imgs/reconocimiento-familia.jpg',
-    alt: 'Foto de reconocimiento en familia',
-    text: '',
-    class: '  '
+    img: "src/imgs/reconocimiento-familia.jpg",
+    alt: "Foto de reconocimiento en familia",
+    text: "",
+    class: "  ",
   },
   {
-    img: 'src/imgs/familias-en-piscina.jpg',
-    alt: 'Familias en piscina',
-    text: '',
-    class: 'img3'
+    img: "src/imgs/familias-en-piscina.jpg",
+    alt: "Familias en piscina",
+    text: "",
+    class: "img3",
   },
   {
-    img: 'src/imgs/nino-armando-compecabezas.jpg',
-    alt: '',
-    text: '',
-    class: 'img4'
+    img: "src/imgs/nino-armando-compecabezas.jpg",
+    alt: "",
+    text: "",
+    class: "img4",
   },
   {
-    img: '',
-    alt: '',
-    text: 'In libero natoque cursus placerat primis est ridiculus vulputate.',
-    class: 'text green'
+    img: "",
+    alt: "",
+    text: "In libero natoque cursus placerat primis est ridiculus vulputate.",
+    class: "text green",
   },
   {
-    img: '',
-    alt: '',
-    text: 'est ridiculus vulputate.Maecenas maecenas accumsan ultricies lobortis fusce primis. Parturient aenean duis aliquet habitasse; felis lobortis congue. Sapien inceptos lobortis fringilla porta quis mattis orci ornare vel.',
-    class: 'text blue'
+    img: "",
+    alt: "",
+    text: "est ridiculus vulputate.Maecenas maecenas accumsan ultricies lobortis fusce primis. Parturient aenean duis aliquet habitasse; felis lobortis congue. Sapien inceptos lobortis fringilla porta quis mattis orci ornare vel.",
+    class: "text blue",
   },
   {
-    img: '',
-    alt: '',
-    text: 'In libero natoque cursus placerat primis est ridiculus vulputate.',
-    class: 'text orange'
-  }
+    img: "",
+    alt: "",
+    text: "In libero natoque cursus placerat primis est ridiculus vulputate.",
+    class: "text orange",
+  },
 ];
-
 
 const mainTroubles = [
   {
-    id: 1, title: 'Problema1', content: 'Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere penatibus augue inceptos aptent cursus accumsan blandit. Laoreet lectus vehicula id accumsan pharetus. Lobortis rutrum magna montes primis fermentum class. Morbi suspendisse felis molestie augue tempus aptent mauris enim. Bibendum commodo primis cubilia integer malesuada sit  eu. Euismod interdum libero dapibus dictumst amet. Donec natoque fringilla integer vitae nulla. Mi cubilia velit, quam ipsum litora hendrerit. Dapibus velit congue ut fusce fusce dolor phasellus.'
+    id: 1,
+    title: "Problema1",
+    content:
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere penatibus augue inceptos aptent cursus accumsan blandit. Laoreet lectus vehicula id accumsan pharetus. Lobortis rutrum magna montes primis fermentum class. Morbi suspendisse felis molestie augue tempus aptent mauris enim. Bibendum commodo primis cubilia integer malesuada sit  eu. Euismod interdum libero dapibus dictumst amet. Donec natoque fringilla integer vitae nulla. Mi cubilia velit, quam ipsum litora hendrerit. Dapibus velit congue ut fusce fusce dolor phasellus.",
   },
   {
-    id: 1, title: 'Problema1', content: 'Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere penatibus augue inceptos aptent cursus accumsan blandit. Laoreet lectus vehicula id accumsan pharetus. Lobortis rutrum magna montes primis fermentum class. Morbi suspendisse felis molestie augue tempus aptent mauris enim. Bibendum commodo primis cubilia integer malesuada sit  eu. Euismod interdum libero dapibus dictumst amet. Donec natoque fringilla integer vitae nulla. Mi cubilia velit, quam ipsum litora hendrerit. Dapibus velit congue ut fusce fusce dolor phasellus.'
+    id: 1,
+    title: "Problema1",
+    content:
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere penatibus augue inceptos aptent cursus accumsan blandit. Laoreet lectus vehicula id accumsan pharetus. Lobortis rutrum magna montes primis fermentum class. Morbi suspendisse felis molestie augue tempus aptent mauris enim. Bibendum commodo primis cubilia integer malesuada sit  eu. Euismod interdum libero dapibus dictumst amet. Donec natoque fringilla integer vitae nulla. Mi cubilia velit, quam ipsum litora hendrerit. Dapibus velit congue ut fusce fusce dolor phasellus.",
   },
   {
-    id: 1, title: 'Problema1', content: 'Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere penatibus augue inceptos aptent cursus accumsan blandit. Laoreet lectus vehicula id accumsan pharetus. Lobortis rutrum magna montes primis fermentum class. Morbi suspendisse felis molestie augue tempus aptent mauris enim. Bibendum commodo primis cubilia integer malesuada sit  eu. Euismod interdum libero dapibus dictumst amet. Donec natoque fringilla integer vitae nulla. Mi cubilia velit, quam ipsum litora hendrerit. Dapibus velit congue ut fusce fusce dolor phasellus.'
+    id: 1,
+    title: "Problema1",
+    content:
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere penatibus augue inceptos aptent cursus accumsan blandit. Laoreet lectus vehicula id accumsan pharetus. Lobortis rutrum magna montes primis fermentum class. Morbi suspendisse felis molestie augue tempus aptent mauris enim. Bibendum commodo primis cubilia integer malesuada sit  eu. Euismod interdum libero dapibus dictumst amet. Donec natoque fringilla integer vitae nulla. Mi cubilia velit, quam ipsum litora hendrerit. Dapibus velit congue ut fusce fusce dolor phasellus.",
   },
   {
-    id: 1, title: 'Problema1', content: 'Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere penatibus augue inceptos aptent cursus accumsan blandit. Laoreet lectus vehicula id accumsan pharetus. Lobortis rutrum magna montes primis fermentum class. Morbi suspendisse felis molestie augue tempus aptent mauris enim. Bibendum commodo primis cubilia integer malesuada sit  eu. Euismod interdum libero dapibus dictumst amet. Donec natoque fringilla integer vitae nulla. Mi cubilia velit, quam ipsum litora hendrerit. Dapibus velit congue ut fusce fusce dolor phasellus.'
+    id: 1,
+    title: "Problema1",
+    content:
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere penatibus augue inceptos aptent cursus accumsan blandit. Laoreet lectus vehicula id accumsan pharetus. Lobortis rutrum magna montes primis fermentum class. Morbi suspendisse felis molestie augue tempus aptent mauris enim. Bibendum commodo primis cubilia integer malesuada sit  eu. Euismod interdum libero dapibus dictumst amet. Donec natoque fringilla integer vitae nulla. Mi cubilia velit, quam ipsum litora hendrerit. Dapibus velit congue ut fusce fusce dolor phasellus.",
   },
   {
-    id: 1, title: 'Problema1', content: 'Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere penatibus augue inceptos aptent cursus accumsan blandit. Laoreet lectus vehicula id accumsan pharetus. Lobortis rutrum magna montes primis fermentum class. Morbi suspendisse felis molestie augue tempus aptent mauris enim. Bibendum commodo primis cubilia integer malesuada sit  eu. Euismod interdum libero dapibus dictumst amet. Donec natoque fringilla integer vitae nulla. Mi cubilia velit, quam ipsum litora hendrerit. Dapibus velit congue ut fusce fusce dolor phasellus.'
+    id: 1,
+    title: "Problema1",
+    content:
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere penatibus augue inceptos aptent cursus accumsan blandit. Laoreet lectus vehicula id accumsan pharetus. Lobortis rutrum magna montes primis fermentum class. Morbi suspendisse felis molestie augue tempus aptent mauris enim. Bibendum commodo primis cubilia integer malesuada sit  eu. Euismod interdum libero dapibus dictumst amet. Donec natoque fringilla integer vitae nulla. Mi cubilia velit, quam ipsum litora hendrerit. Dapibus velit congue ut fusce fusce dolor phasellus.",
   },
   {
-    id: 1, title: 'Problema1', content: 'Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere penatibus augue inceptos aptent cursus accumsan blandit. Laoreet lectus vehicula id accumsan pharetus. Lobortis rutrum magna montes primis fermentum class. Morbi suspendisse felis molestie augue tempus aptent mauris enim. Bibendum commodo primis cubilia integer malesuada sit  eu. Euismod interdum libero dapibus dictumst amet. Donec natoque fringilla integer vitae nulla. Mi cubilia velit, quam ipsum litora hendrerit. Dapibus velit congue ut fusce fusce dolor phasellus.'
+    id: 1,
+    title: "Problema1",
+    content:
+      "Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere penatibus augue inceptos aptent cursus accumsan blandit. Laoreet lectus vehicula id accumsan pharetus. Lobortis rutrum magna montes primis fermentum class. Morbi suspendisse felis molestie augue tempus aptent mauris enim. Bibendum commodo primis cubilia integer malesuada sit  eu. Euismod interdum libero dapibus dictumst amet. Donec natoque fringilla integer vitae nulla. Mi cubilia velit, quam ipsum litora hendrerit. Dapibus velit congue ut fusce fusce dolor phasellus.",
   },
-
-
-]
+];
 const visible = ref(mainTroubles.map(() => false));
 
 const toggleCont = (index) => {
@@ -86,235 +136,231 @@ const toggleCont = (index) => {
 };
 const servicesCards = [
   {
-    title: 'Estimulacion del lenguaje',
-    img: 'src/imgs/img-web/estimulacion-del-lenguaje.jpg',
-    alt: 'Estimulacion del lenguaje',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. est ridiculus vulputate.Maecenas maecenas accumsan ultricies lobortis fusce primis. Parturient aenean duis aliquet habitasse; felis lobortis congue. Sapien inceptos lobortis fringilla porta quis mattis orci ornare vel. ',
-    file: '',
+    title: "Estimulacion del lenguaje",
+    img: "src/imgs/img-web/estimulacion-del-lenguaje.jpg",
+    alt: "Estimulacion del lenguaje",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. est ridiculus vulputate.Maecenas maecenas accumsan ultricies lobortis fusce primis. Parturient aenean duis aliquet habitasse; felis lobortis congue. Sapien inceptos lobortis fringilla porta quis mattis orci ornare vel. ",
+    file: "",
     buttons: [
       {
-        buttonTitle: 'Quiero conocer mas ',
-        action: 'openFile',
-        class: ' btn primary-button'
+        buttonTitle: "Quiero conocer mas ",
+        action: "openFile",
+        class: " btn primary-button",
       },
       {
-        buttonTitle: 'Quiero contactarme',
-        action: 'openFile',
-        class: ' btn secondary-button'
-      }
-    ]
+        buttonTitle: "Quiero contactarme",
+        action: "openFile",
+        class: " btn secondary-button",
+      },
+    ],
   },
 
   {
-    title: 'TEA',
-    img: 'src/imgs/img-web/estimulacion-del-lenguaje.jpg',
-    alt: 'Estimulacion del lenguaje',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. est ridiculus vulputate.Maecenas maecenas accumsan ultricies lobortis fusce primis. Parturient aenean duis aliquet habitasse; felis lobortis congue. Sapien inceptos lobortis fringilla porta quis mattis orci ornare vel. ',
-    file: '',
+    title: "TEA",
+    img: "src/imgs/img-web/estimulacion-del-lenguaje.jpg",
+    alt: "Estimulacion del lenguaje",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. est ridiculus vulputate.Maecenas maecenas accumsan ultricies lobortis fusce primis. Parturient aenean duis aliquet habitasse; felis lobortis congue. Sapien inceptos lobortis fringilla porta quis mattis orci ornare vel. ",
+    file: "",
     buttons: [
       {
-        buttonTitle: 'Quiero conocer mas ',
-        action: 'openFile',
-        class: ' btn primary-button'
+        buttonTitle: "Quiero conocer mas ",
+        action: "openFile",
+        class: " btn primary-button",
       },
       {
-        buttonTitle: 'Quiero contactarme',
-        action: 'openFile',
-        class: ' btn secondary-button'
-      }
-    ]
+        buttonTitle: "Quiero contactarme",
+        action: "openFile",
+        class: " btn secondary-button",
+      },
+    ],
   },
   {
-    title: 'TDHA',
-    img: 'src/imgs/img-web/estimulacion-del-lenguaje.jpg',
-    alt: 'Estimulacion del lenguaje',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    file: '',
+    title: "TDHA",
+    img: "src/imgs/img-web/estimulacion-del-lenguaje.jpg",
+    alt: "Estimulacion del lenguaje",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    file: "",
     buttons: [
       {
-        buttonTitle: 'Quiero conocer mas ',
-        action: 'openFile',
-        class: 'btn primary-button'
+        buttonTitle: "Quiero conocer mas ",
+        action: "openFile",
+        class: "btn primary-button",
       },
       {
-        buttonTitle: 'Quiero contactarme',
-        action: 'openFile',
-        class: ' btn secondary-button'
-      }
-    ]
+        buttonTitle: "Quiero contactarme",
+        action: "openFile",
+        class: " btn secondary-button",
+      },
+    ],
   },
   {
-    title: 'TDA',
-    img: 'src/imgs/img-web/estimulacion-del-lenguaje.jpg',
-    alt: 'Estimulacion del lenguaje',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    file: '',
+    title: "TDA",
+    img: "src/imgs/img-web/estimulacion-del-lenguaje.jpg",
+    alt: "Estimulacion del lenguaje",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    file: "",
     buttons: [
       {
-        buttonTitle: 'Quiero conocer mas ',
-        action: 'openFile',
-        class: 'btn primary-button'
+        buttonTitle: "Quiero conocer mas ",
+        action: "openFile",
+        class: "btn primary-button",
       },
       {
-        buttonTitle: 'Quiero contactarme',
-        action: 'openFile',
-        class: ' btn secondary-button'
-      }
-    ]
+        buttonTitle: "Quiero contactarme",
+        action: "openFile",
+        class: " btn secondary-button",
+      },
+    ],
   },
   {
-    title: 'Gestion Emocional',
-    img: 'src/imgs/img-web/estimulacion-del-lenguaje.jpg',
-    alt: 'Estimulacion del lenguaje',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    file: '',
+    title: "Gestion Emocional",
+    img: "src/imgs/img-web/estimulacion-del-lenguaje.jpg",
+    alt: "Estimulacion del lenguaje",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    file: "",
     buttons: [
       {
-        buttonTitle: 'Quiero conocer mas ',
-        action: 'openFile',
-        class: 'btn primary-button'
+        buttonTitle: "Quiero conocer mas ",
+        action: "openFile",
+        class: "btn primary-button",
       },
       {
-        buttonTitle: 'Quiero contactarme',
-        action: 'openFile',
-        class: ' btn secondary-button'
-      }
-    ]
+        buttonTitle: "Quiero contactarme",
+        action: "openFile",
+        class: " btn secondary-button",
+      },
+    ],
   },
   {
-    title: 'Entrenamiento neurologico para concentracion y memoria',
-    img: 'src/imgs/img-web/estimulacion-del-lenguaje.jpg',
-    alt: 'Estimulacion del lenguaje',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    file: '',
+    title: "Entrenamiento neurologico para concentracion y memoria",
+    img: "src/imgs/img-web/estimulacion-del-lenguaje.jpg",
+    alt: "Estimulacion del lenguaje",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    file: "",
     buttons: [
       {
-        buttonTitle: 'Quiero conocer mas ',
-        action: 'openFile',
-        class: 'btn primary-button'
+        buttonTitle: "Quiero conocer mas ",
+        action: "openFile",
+        class: "btn primary-button",
       },
       {
-        buttonTitle: 'Quiero contactarme',
-        action: 'openFile',
-        class: ' btn secondary-button'
-      }
-    ]
+        buttonTitle: "Quiero contactarme",
+        action: "openFile",
+        class: " btn secondary-button",
+      },
+    ],
   },
   {
-    title: 'Lectura, Escritura y Matematicas',
-    img: 'src/imgs/img-web/estimulacion-del-lenguaje.jpg',
-    alt: 'Estimulacion del lenguaje',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    file: '',
+    title: "Lectura, Escritura y Matematicas",
+    img: "src/imgs/img-web/estimulacion-del-lenguaje.jpg",
+    alt: "Estimulacion del lenguaje",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    file: "",
     buttons: [
       {
-        buttonTitle: 'Quiero conocer mas ',
-        action: 'openFile',
-        class: 'btn primary-button'
+        buttonTitle: "Quiero conocer mas ",
+        action: "openFile",
+        class: "btn primary-button",
       },
       {
-        buttonTitle: 'Quiero contactarme',
-        action: 'openFile',
-        class: ' btn secondary-button'
-      }
-    ]
-  }
+        buttonTitle: "Quiero contactarme",
+        action: "openFile",
+        class: " btn secondary-button",
+      },
+    ],
+  },
 ];
 let videos = [
   {
-    preview: 'src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg',
-    video: 'src/videos/SampleVideo_1280x720_1mb.mp4'
+    preview:
+      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "src/videos/SampleVideo_1280x720_1mb.mp4",
   },
   {
-    preview: 'src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg',
-    video: 'src/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4'
+    preview:
+      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "src/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4",
   },
   {
-    preview: 'src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg',
-    video: 'src/videos/SampleVideo_1280x720_1mb.mp4'
+    preview:
+      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "src/videos/SampleVideo_1280x720_1mb.mp4",
   },
   {
-    preview: 'src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg',
-    video: 'src/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4'
+    preview:
+      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "src/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4",
   },
   {
-    preview: 'src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg',
-    video: 'src/videos/SampleVideo_1280x720_1mb.mp4'
+    preview:
+      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "src/videos/SampleVideo_1280x720_1mb.mp4",
   },
   {
-    preview: 'src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg',
-    video: 'src/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4'
+    preview:
+      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "src/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4",
   },
   {
-    preview: 'src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg',
-    video: 'src/videos/SampleVideo_1280x720_1mb.mp4'
+    preview:
+      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "src/videos/SampleVideo_1280x720_1mb.mp4",
   },
   {
-    preview: 'src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg',
-    video: 'src/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4'
+    preview:
+      "src/imgs/img-web/lively-enthusiastic-determined-smiling-confident-asian-girl-ready-tackle-any-task-cross-fingers-chest-assertive-selfassured-smiling-satisfied-look-like-professional-white-background.jpg",
+    video: "src/videos/V1-0081_URSA Mini_1_2016-09-20_1006_C0031.mp4",
   },
 ];
 
 const itemsFooter = [
   {
-    title: 'Experiecia y recorrido',
-    link: ''
-
-
+    title: "Experiecia y recorrido",
+    link: "",
   },
   {
-    title: 'Mas informacion ',
-    link: ''
-
-
+    title: "Mas informacion ",
+    link: "",
   },
   {
-    title: 'Ubicacion',
-    link: ''
-
-
+    title: "Ubicacion",
+    link: "",
   },
   {
-    title: 'Contactanos',
-    link: ''
-
-
+    title: "Contactanos",
+    link: "",
   },
-
-]
+];
 const itemsFooterDudasFrecuentes = [
   {
-    title: 'Duda 1',
-    link: ''
-
-
+    title: "Duda 1",
+    link: "",
   },
   {
-    title: 'Duda 2',
-    link: ''
-
-
+    title: "Duda 2",
+    link: "",
   },
   {
-    title: 'Duda 3 ',
-    link: ''
-
-
+    title: "Duda 3 ",
+    link: "",
   },
   {
-    title: 'Duda 4',
-    link: ''
-
-
+    title: "Duda 4",
+    link: "",
   },
-
-]
+];
 const steps = [
-  { name: faPhone, text: "1.- Contactactanos con las opciones de contacto abajo " },
+  {
+    name: faPhone,
+    text: "1.- Contactactanos con las opciones de contacto abajo ",
+  },
   { name: faCalendar, text: "2.-Acordar cita de presenacion" },
-  { name: faFileSignature, text: "3.- Explorar el lugar y los servicios que ofrecemos" },
-  { name: faPeopleGroup, text: "4.- Comenzar con el proceso" }
-]
+  {
+    name: faFileSignature,
+    text: "3.- Explorar el lugar y los servicios que ofrecemos",
+  },
+  { name: faPeopleGroup, text: "4.- Comenzar con el proceso" },
+];
 const videoSrc = ref(null);
 
 function playVideo(video) {
@@ -329,17 +375,17 @@ const carouselBreakpoints = {
   900: { itemsToShow: 3.5 },
   700: { itemsToShow: 3 },
   400: { itemsToShow: 2.5 },
-  300: { itemsToShow: 1.2 }
+  300: { itemsToShow: 1.2 },
 };
 
-
-const addressText = ref("Calle República de Cuba 653 sur y Ave. Insurgentes. Col. Ex-Hipódromo., Ciudad Juárez, Mexico");
+const addressText = ref(
+  "Calle República de Cuba 653 sur y Ave. Insurgentes. Col. Ex-Hipódromo., Ciudad Juárez, Mexico"
+);
 
 function copyToClipboard() {
-  navigator.clipboard.writeText(addressText.value)
-    .then(() => {
-      alert("Texto copiado al portapapeles");
-    });
+  navigator.clipboard.writeText(addressText.value).then(() => {
+    alert("Texto copiado al portapapeles");
+  });
 }
 // let selectedVideo = null;
 // let isModalOpen = false;
@@ -353,7 +399,6 @@ function copyToClipboard() {
 //   isModalOpen = false;
 // } const colors = ['golos', 'golos', 'golos', 'golos'];
 
-
 // b
 </script>
 <template>
@@ -364,60 +409,77 @@ function copyToClipboard() {
       <div class="cont-hero-text">
         <h1 class="hero">Centro Humanista IN</h1>
         <div class="text-btn">
-          <h1 class="font">Contribuir a la felicidad de las <br /> familias</h1>
+          <h1 class="font">
+            Contribuir a la felicidad de las <br />
+            familias
+          </h1>
 
-          <button class=" btn secondary-button btn-contacto">
+          <button class="btn secondary-button btn-contacto">
             <h5>Contactanos</h5>
           </button>
         </div>
       </div>
     </section>
-
     <div class="margin">
-
-      <section style="margin: 100px 0; ">
-        <h2 style="margin-bottom: 40px;">Visitanos y siguenos en nuestras redes sociales:</h2>
+      <section style="margin: 100px 0">
+        <h2 style="margin-bottom: 40px">
+          Visitanos y siguenos en nuestras redes sociales:
+        </h2>
 
         <div class="icon-container">
-
           <div v-for="(icon, index) in icons" :key="index">
-
-
-            <a :href='icon.href' target="_blank"> <font-awesome-icon :icon="icon.name" class="icon" /></a>
+            <a :href="icon.href" target="_blank">
+              <font-awesome-icon :icon="icon.name" class="icon"
+            /></a>
           </div>
         </div>
-
       </section>
 
       <section class="about-us-grid">
-        <div v-for="(item, index) in itemsAboutUs" :key="index" :class="item.class">
+        <div
+          v-for="(item, index) in itemsAboutUs"
+          :key="index"
+          :class="item.class"
+        >
           <img v-if="item.img" :src="item.img" :alt="item.alt" />
           <p v-else>{{ item.text }}</p>
         </div>
       </section>
 
-      <section class="cont-mision-vision">
-
-      </section>
+      <section class="cont-mision-vision"></section>
 
       <section>
         <h1>Nuestros servicios</h1>
-        <br>
-        <h4 class="servic-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam illum quod maiores
-          quasi
-          vitae quibusdam sit cupiditate ea dolor eaque.</h4>
+        <br />
+        <h4 class="servic-info">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+          illum quod maiores quasi vitae quibusdam sit cupiditate ea dolor
+          eaque.
+        </h4>
         <div class="cont-services">
-          <div v-for="(card, index) in servicesCards " :key="index" class="card-cont">
+          <div
+            v-for="(card, index) in servicesCards"
+            :key="index"
+            class="card-cont"
+          >
             <h2 class="card-title">{{ card.title }}</h2>
-            <img :src=card.img :alt=card.alt class="cont-serivce-card-img" />
+            <img
+              :src="card.img"
+              :alt="card.alt"
+              class="cont-serivce-card-img"
+            />
             <div class="service-card-text">{{ card.text }}</div>
-            <div class="card-buttons-cont" v-for="(button, index) in card.buttons" :key="index">
-              <button :onclick="button.action" :class="button.class">{{ button.buttonTitle }}</button>
+            <div
+              class="card-buttons-cont"
+              v-for="(button, index) in card.buttons"
+              :key="index"
+            >
+              <button :onclick="button.action" :class="button.class">
+                {{ button.buttonTitle }}
+              </button>
             </div>
           </div>
         </div>
-
-
       </section>
 
       <section class="cont-talleres">
@@ -436,11 +498,9 @@ function copyToClipboard() {
               <h4 class="txt">golajdkhsa</h4>
             </div>
             <div class="container azul bg-image-3">
-
               <h4 class="txt">golajdkhsa</h4>
             </div>
             <div class="container verde bg-image-4">
-
               <h4 class="txt">golajdkhsa</h4>
             </div>
           </div>
@@ -449,38 +509,60 @@ function copyToClipboard() {
     </div>
 
     <section class="bg-cont-main-troubles">
-
       <div class="margin">
-        <h1 style="margin-bottom: 50px;">Pricipales Problemas</h1>
+        <h1 style="margin-bottom: 50px">Pricipales Problemas</h1>
         <div class="main-troubles-cont">
-          <div class="column" v-for="(trouble, index) in mainTroubles" :key="trouble.id">
+          <div
+            class="column"
+            v-for="(trouble, index) in mainTroubles"
+            :key="trouble.id"
+          >
             <div class="column-title" @click="toggleCont(index)">
               <p class="title">{{ trouble.title }}</p>
-              <font-awesome-icon :icon="faChevronDown" style="font-size: 20px;" />
-
+              <font-awesome-icon
+                :icon="faChevronDown"
+                style="font-size: 20px"
+              />
             </div>
-            <div class="content" :style="{ height: visible[index] ? 'auto' : '0', opacity: visible[index] ? 1 : 0 }">
+            <div
+              class="content"
+              :style="{
+                height: visible[index] ? 'auto' : '0',
+                opacity: visible[index] ? 1 : 0,
+              }"
+            >
               {{ trouble.content }}
             </div>
           </div>
         </div>
-
-
       </div>
     </section>
 
     <section>
       <div class="margin">
-
         <div class="cont-carrousel">
-          <h1 style="padding: 30px 0;">Testimonios</h1>
-          <carousel :items-to-show="5.5" :breakpoints="carouselBreakpoints" gap="20px">
+          <h1 style="padding: 30px 0">Testimonios</h1>
+          <carousel
+            :items-to-show="5.5"
+            :breakpoints="carouselBreakpoints"
+            gap="20px"
+          >
             <slide v-for="(video, index) in videos" :key="index">
               <div class="slide-content">
                 <div class="video-preview">
-                  <img :src="video.preview" :alt="`Preview for video ${index + 1}`" />
-                  <button class="play-button" @click="playVideo(video.video)" aria-label="Play Video">
-                    <font-awesome-icon :icon="faPlay" style="font-size: 50px; color: var(--primary-color)" />
+                  <img
+                    :src="video.preview"
+                    :alt="`Preview for video ${index + 1}`"
+                  />
+                  <button
+                    class="play-button"
+                    @click="playVideo(video.video)"
+                    aria-label="Play Video"
+                  >
+                    <font-awesome-icon
+                      :icon="faPlay"
+                      style="font-size: 50px; color: var(--primary-color)"
+                    />
                   </button>
                 </div>
               </div>
@@ -491,21 +573,26 @@ function copyToClipboard() {
               <pagination />
             </template>
           </carousel>
-          <p style="margin-top: 50px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur ex pariatur
-            error
-            necessitatibus
-            distinctio
-            perferendis quibusdam quo impedit excepturi ut doloremque sit modi totam aut sequi, porro quae? Numquam,
-            voluptatum.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur ex pariatur error necessitatibus
-            distinctio
-            perferendis quibusdam quo impedit excepturi ut doloremque sit modi totam aut sequi, porro quae? Numquam,
-            voluptatum.
+          <p style="margin-top: 50px">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consectetur ex pariatur error necessitatibus distinctio perferendis
+            quibusdam quo impedit excepturi ut doloremque sit modi totam aut
+            sequi, porro quae? Numquam, voluptatum. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Consectetur ex pariatur error
+            necessitatibus distinctio perferendis quibusdam quo impedit
+            excepturi ut doloremque sit modi totam aut sequi, porro quae?
+            Numquam, voluptatum.
           </p>
 
           <div v-if="videoSrc" class="modal" @click.self="closeModal">
             <div class="modal-content">
-              <button class="close" @click="closeModal" aria-label="Close Modal">&times;</button>
+              <button
+                class="close"
+                @click="closeModal"
+                aria-label="Close Modal"
+              >
+                &times;
+              </button>
               <video controls autoplay>
                 <source :src="videoSrc" type="video/mp4" />
                 Tu navegador no soporta la reproducción de videos.
@@ -514,7 +601,6 @@ function copyToClipboard() {
           </div>
         </div>
       </div>
-
     </section>
 
     <section class="backgroud-cont-experience">
@@ -524,9 +610,10 @@ function copyToClipboard() {
           <h4>Lorem ipsum dolor sit</h4>
           <h1>Clay Gonzalez</h1>
           <h5>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur corporis
-            debitis! A, minima, molestiae vero laboriosam repellendus in ratione tempora blanditiis
-            iste sit iusto fugiat officia ullam cum excepturi molestias.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            consequuntur corporis debitis! A, minima, molestiae vero laboriosam
+            repellendus in ratione tempora blanditiis iste sit iusto fugiat
+            officia ullam cum excepturi molestias.
           </h5>
         </div>
       </div>
@@ -535,35 +622,49 @@ function copyToClipboard() {
     <div class="margin">
       <section>
         <div class="cont-map">
-          <div style="width: 100%; padding: 0 30px;"><iframe width="100%" height="600" frameborder="0" scrolling="no"
-              marginheight="0" marginwidth="0"
-              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Calle%20Rep%C3%BAblica%20de%20Cuba%20653%20sur%20y%20Ave.%20Insurgentes.%20Col.%20Ex-Hip%C3%B3dromo.,%20Ciudad%20Ju%C3%A1rez,%20Mexico+(INN)&amp;t=p&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                href="https://www.gps.ie/car-satnav-gps/">Sat Navs</a></iframe></div>
+          <div style="width: 100%; padding: 0 30px">
+            <iframe
+              width="100%"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Calle%20Rep%C3%BAblica%20de%20Cuba%20653%20sur%20y%20Ave.%20Insurgentes.%20Col.%20Ex-Hip%C3%B3dromo.,%20Ciudad%20Ju%C3%A1rez,%20Mexico+(INN)&amp;t=p&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ><a href="https://www.gps.ie/car-satnav-gps/">Sat Navs</a></iframe
+            >
+          </div>
 
           <div class="cont-map-buttons">
             <font-awesome-icon :icon="faLocation" class="icon-location" />
             <p @click="copyToClipboard" class="copyable">
-              Calle República de Cuba 653 sur y Ave. Insurgentes. Col. Ex-Hipódromo., Ciudad Juárez, Mexico
+              Calle República de Cuba 653 sur y Ave. Insurgentes. Col.
+              Ex-Hipódromo., Ciudad Juárez, Mexico
             </p>
-            <a target="_blank"
-              href="https://www.google.com.mx/maps/search/Calle+Rep%C3%BAblica+de+Cuba+653+sur+y+Ave.+Insurgentes.+Col.+Ex-Hip%C3%B3dromo.+32330+Ciudad+Ju%C3%A1rez,+M%C3%A9xico/@31.7321784,-106.4643818,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"><button
-                class="btn primary-button"> Abrir en Google Maps</button></a>
-
+            <a
+              target="_blank"
+              href="https://www.google.com.mx/maps/search/Calle+Rep%C3%BAblica+de+Cuba+653+sur+y+Ave.+Insurgentes.+Col.+Ex-Hip%C3%B3dromo.+32330+Ciudad+Ju%C3%A1rez,+M%C3%A9xico/@31.7321784,-106.4643818,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
+              ><button class="btn primary-button">
+                Abrir en Google Maps
+              </button></a
+            >
           </div>
         </div>
-
       </section>
     </div>
     <section>
       <div class="cont-contact">
         <div class="margin">
-          <h1>Contactanos </h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quam officia sunt adipisci? Et, velit,
-            voluptatum exercitationem eius vel repellendus alias doloremque officia eligendi fugiat corporis. Tempore
-            voluptas unde neque sed ipsam cum ipsum consectetur eveniet vel recusandae, praesentium nobis quisquam
-            quaerat
-            amet a? Saepe consequuntur error eligendi, dolore optio quidem libero rem, excepturi iure, repellat delectus
-            accusamus pariatur explicabo?</p>
+          <h1>Contactanos</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quam
+            officia sunt adipisci? Et, velit, voluptatum exercitationem eius vel
+            repellendus alias doloremque officia eligendi fugiat corporis.
+            Tempore voluptas unde neque sed ipsam cum ipsum consectetur eveniet
+            vel recusandae, praesentium nobis quisquam quaerat amet a? Saepe
+            consequuntur error eligendi, dolore optio quidem libero rem,
+            excepturi iure, repellat delectus accusamus pariatur explicabo?
+          </p>
 
           <div class="timeline">
             <div class="line"></div>
@@ -575,15 +676,19 @@ function copyToClipboard() {
             </div>
           </div>
           <div class="cont-contact-icons-media">
-            <div class="cont-media"> <font-awesome-icon :icon="faWhatsapp" class="icon-location" /> 656-5656-5656</div>
-            <div class="cont-media"> <font-awesome-icon :icon="faSquareEnvelope" class="icon-location" />
+            <div class="cont-media">
+              <font-awesome-icon :icon="faWhatsapp" class="icon-location" />
+              656-5656-5656
+            </div>
+            <div class="cont-media">
+              <font-awesome-icon
+                :icon="faSquareEnvelope"
+                class="icon-location"
+              />
               correo.correo@gmail.com
             </div>
-
           </div>
-
         </div>
-
       </div>
     </section>
 
@@ -592,52 +697,67 @@ function copyToClipboard() {
         <div class="margin">
           <div class="upper">
             <div class="child-cont">
-              <img src="/src/imgs/main-logo.png" alt="Logo Cenrto Humanista" class="logo">
+              <img
+                src="/src/imgs/main-logo.png"
+                alt="Logo Cenrto Humanista"
+                class="logo"
+              />
               <h3>Centro Humanista IN</h3>
             </div>
             <div class="child-cont">
-              <img src="/src/imgs/mantarrallas-logo.png" alt="Mantarrallas Club Logo" class="logo">
+              <img
+                src="/src/imgs/mantarrallas-logo.png"
+                alt="Mantarrallas Club Logo"
+                class="logo"
+              />
               <h3>Mantarrallas Club Deportivo</h3>
             </div>
           </div>
           <div class="items">
             <div class="item-cont">
               <div class="icon-cont">
-                <div style="flex-direction: column; display:flex;"><a :href='icon.href' target="_blank"
-                    class="icon-cont" v-for="(icon, index) in icons" :key="index">
+                <div style="flex-direction: column; display: flex">
+                  <a
+                    :href="icon.href"
+                    target="_blank"
+                    class="icon-cont"
+                    v-for="(icon, index) in icons"
+                    :key="index"
+                  >
                     <font-awesome-icon :icon="icon.name" class="icon-footer" />
                     <p>{{ icon.title }}</p>
-                  </a></div>
-
-
+                  </a>
+                </div>
               </div>
             </div>
             <div class="item-cont">
-              <div v-for="(item, index) in itemsFooter" :key="index" style=" padding: 20px 0;"><a :href="item.link"
-                  target="_blank" class="item-footer-a">{{ item.title
-                  }}</a></div>
-
+              <div
+                v-for="(item, index) in itemsFooter"
+                :key="index"
+                style="padding: 20px 0"
+              >
+                <a :href="item.link" target="_blank" class="item-footer-a">{{
+                  item.title
+                }}</a>
+              </div>
             </div>
             <div class="item-cont">
-              <div v-for="(item, index) in itemsFooterDudasFrecuentes" :key="index" style=" padding: 20px 0;"><a
-                  :href="item.link" target="_blank" class="item-footer-a">{{
-                    item.title
-                  }}</a></div>
-
+              <div
+                v-for="(item, index) in itemsFooterDudasFrecuentes"
+                :key="index"
+                style="padding: 20px 0"
+              >
+                <a :href="item.link" target="_blank" class="item-footer-a">{{
+                  item.title
+                }}</a>
+              </div>
             </div>
           </div>
         </div>
-
-
       </div>
     </section>
   </div>
-
 </template>
-
-
-
-
 
 <!-- TODO: CAMBIAR HERO A PARTIR DE LOS 600PX -->
 
@@ -708,36 +828,6 @@ function copyToClipboard() {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .main-cont {
   display: flex;
   flex-direction: column;
@@ -758,9 +848,6 @@ function copyToClipboard() {
   display: flex;
   justify-content: space-between;
 }
-
-
-
 
 .backgroud-cont-experience {
   height: 400px;
@@ -886,7 +973,7 @@ function copyToClipboard() {
 .bg-image-2::before,
 .bg-image-3::before,
 .bg-image-4::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -912,23 +999,23 @@ function copyToClipboard() {
 }
 
 .bg-image-1::before {
-  background-image: url('src/imgs/img-web/estimulacion-del-lenguaje.jpg');
+  background-image: url("src/imgs/img-web/estimulacion-del-lenguaje.jpg");
 }
 
 .bg-image-2::before {
   flex: 1;
-  background-image: url('src/imgs/img-web/familia2.jpeg');
+  background-image: url("src/imgs/img-web/familia2.jpeg");
 }
 
 .bg-image-3::before {
   flex: 1;
-  background-image: url('src/imgs/img-web/familia 3.jpeg');
+  background-image: url("src/imgs/img-web/familia 3.jpeg");
 }
 
 .bg-image-4::before {
   flex: 1;
 
-  background-image: url('src/imgs/img-web/nino-con-jugue4tes.jpg');
+  background-image: url("src/imgs/img-web/nino-con-jugue4tes.jpg");
 }
 
 .content {
@@ -960,19 +1047,16 @@ function copyToClipboard() {
   }
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
 @media (max-width: 767px) {
-
-
   .cont-hero-text .text-btn button {
     max-width: 200px;
   }
 }
 
-
 /* CODIGO NUEO QUE SE QUE USO: */
-
 
 /* hero */
 .cont-hero img {
@@ -1011,12 +1095,6 @@ function copyToClipboard() {
   max-width: 400px;
 }
 
-
-
-
-
-
-
 /* iconos */
 .icon-container {
   display: flex;
@@ -1030,12 +1108,6 @@ function copyToClipboard() {
   font-size: 50px;
   cursor: pointer;
 }
-
-
-
-
-
-
 
 /* acerca de GRID  */
 .about-us-grid {
@@ -1055,7 +1127,6 @@ function copyToClipboard() {
   overflow: clip;
   display: flex;
   align-items: stretch;
-
 }
 
 .about-us-grid img {
@@ -1066,48 +1137,51 @@ function copyToClipboard() {
 }
 
 .about-us-grid .green {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 20px;
   grid-area: green;
+  cursor: pointer;
 }
 
 .about-us-grid .blue {
-  background-color: #2196F3;
+  background-color: #2196f3;
   color: white;
   padding: 20px;
   grid-area: blue;
+  cursor: pointer;
 }
 
 .about-us-grid .orange {
-  background-color: #FF9800;
+  background-color: #ff9800;
   color: white;
   padding: 20px;
   grid-area: orange;
+  cursor: pointer;
 }
 
 .about-us-grid .img1 {
   grid-area: img1;
+  cursor: pointer;
 }
 
 .about-us-grid .img2 {
   grid-area: img2;
+  cursor: pointer;
 }
 
 .about-us-grid .img3 {
   grid-area: img3;
+  cursor: pointer;
+}
+.about-us-grid .img3 {
+  transform: scale(20px);
 }
 
 .about-us-grid .img4 {
   grid-area: img4;
+  cursor: pointer;
 }
-
-
-
-
-
-
-
 
 /* Carousel part */
 .cont-carrousel {
@@ -1124,8 +1198,6 @@ function copyToClipboard() {
   max-width: 100%;
   cursor: pointer;
 }
-
-
 
 /* Estilos para el modal */
 .modal {
@@ -1161,10 +1233,6 @@ function copyToClipboard() {
   color: white;
   cursor: pointer;
 }
-
-
-
-
 
 /* Principales problemas */
 .bg-cont-main-troubles {
@@ -1220,18 +1288,6 @@ function copyToClipboard() {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Mapa */
 
 .cont-map {
@@ -1258,23 +1314,12 @@ function copyToClipboard() {
 
 .copyable:hover {
   color: var(--secondary-color);
-
 }
 
 .icon-location {
   color: var(--secondary-color);
-  font-size: 90px
+  font-size: 90px;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* Contactanos */
 .cont-contact {
@@ -1334,7 +1379,6 @@ function copyToClipboard() {
   max-width: 300px;
 }
 
-
 .icon-timeline {
   font-size: 35px;
   display: flex;
@@ -1366,9 +1410,6 @@ function copyToClipboard() {
   }
 }
 
-
-
-
 /* Footer */
 .footer {
   background-color: var(--support-color);
@@ -1379,18 +1420,15 @@ function copyToClipboard() {
 .upper {
   display: flex;
   justify-content: space-between;
-
 }
 
 .item-cont {
   display: flex;
   flex-direction: column;
-
 }
 
 .item-footer-a {
   color: white;
-
 }
 
 .logo {
@@ -1415,17 +1453,35 @@ function copyToClipboard() {
 .icon-footer {
   color: white;
   padding: 20px 0;
-
 }
 
 .icon-footer:hover,
 .icon-cont:hover {
   color: rgb(191, 191, 191);
-  font-size: 19px
+  font-size: 19px;
 }
 
 .items {
   display: flex;
   justify-content: space-between;
+}
+
+.wrapr {
+  display: flex;
+  gap: 20px;
+}
+
+.wrapr .card {
+  height: 500px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: #106dba;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.wrapr:hover > :not(:hover) {
+  filter: blur(1px);
+  opacity: 0.6;
 }
 </style>
