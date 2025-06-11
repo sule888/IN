@@ -10,7 +10,9 @@
   font-family: var(--primary-font);
 }
 
-/* Fonts */
+
+
+/* Colors */
 :root {
   --primary-font: "Amaranth";
   --secondary-font: "Lekton";
@@ -19,36 +21,62 @@
   --primary-color: #FF9966;
   --secondary-color: #6495ED;
   --support-color: #0abf79;
-  --background-color: #c4d7f9:
+  --background-color: #c4d7f9;
+  --subtitle-color:  #a84210;
 }
 
-
-
-
-
-.hero {
-  font-size: 80px;
+/* Fonts */
+.titles {
+  font-size: 32px;
 }
 
-h1 {
-  font-size: 40px;
+.subtitles {
+  font-size: 14px;
+  color:var(--subtitle-color);
+  font-weight: bold;
 }
 
-h2 {
-  font-size: 35px;
+.normal-text {
+  font-size: 14px;
 }
 
-h3 {
-  font-size: 30px;
+/* >400px y <800px */
+@media screen and (min-width: 401px) and (max-width: 799px) {
+  .titles {
+    font-size: 40px;
+  }
+
+  .normal-text {
+    font-size: 16px;
+  }
+
+  .subtitles {
+    font-size: 16px;
+    color:var(--subtitle-color);
+  }
+
+  .btn{
+    font-size: 16px;
+  }
 }
 
-h4 {
-  font-size: 20px;
-}
+/* >=800px */
+@media screen and (min-width: 800px) {
+  .titles {
+    font-size: 48px;
+  }
 
-/* normal text */
-h5 {
-  font-size: 16px;
+  .normal-text {
+    font-size: 18px;
+  }
+
+  .subtitles {
+    font-size: 18px;
+    color:var(--subtitle-color);
+  }
+   .btn{
+    font-size: 18px;
+  }
 }
 
 /* tooltips */
@@ -56,6 +84,8 @@ h6 {
   font-size: 12px;
 }
 
+
+/* Elements */
 .btn {
   height: auto;
   display: flex;
@@ -79,62 +109,19 @@ h6 {
 }
 
 .primary-button:hover {
-  background-color: #fe6f39;
+  background-color: var(--subtitle-color);
 }
 
 .secondary-button {
-  background-color: #6495ed;
+  background-color: white;
+  border: var(--primary-color) 2px solid;
+  color: var(--primary-color);
 }
 
 .secondary-button:hover {
-  background-color: #355adb;
-}
-
-.secondary-button:disabled {
-  background-color: #6495ed;
-  color: #355adb;
-}
-
-@media screen and (max-width: 1300px) {
-  .hero {
-    font-size: 55px;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-
-  h5 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .hero {
-    font-size: 25px;
-  }
-
-  h1 {
-    font-size: 15px;
-  }
-
-  h5 {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .hero {
-    font-size: 35px;
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-
-  h5 {
-    font-size: 12px;
-  }
+  background-color: white;
+  color: var(--subtitle-color);
+  border: var(--subtitle-color) 2px solid;
 }
 
 a {
