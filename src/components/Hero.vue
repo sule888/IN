@@ -2,7 +2,7 @@
   <section class="cont-hero">
     <img src="@/imgs/Heroimg.jpg" alt="Hero" class="hero-img" />
     <div class="cont-hero-text">
-      <h1 class="titles">Centro de Educación Integral Humanista IN</h1>
+      <h1 class="titles" style="color: white;">Centro de Educación Integral Humanista IN</h1>
       <button class=" btn-contacto primary-button ">Contáctanos</button>
     </div>
   </section>

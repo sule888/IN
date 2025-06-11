@@ -1,7 +1,8 @@
 <template>
     <section>
+      <h1 class="titles" style="margin-bottom: 32px;">Como encontrarnos:</h1>
         <div class="cont-map">
-          <div style="width: 100%; padding: 0 30px">
+          <div style="width: 100%; ">
             <iframe
               width="100%"
               height="600"
@@ -15,14 +16,14 @@
           </div>
           <div class="cont-map-buttons">
             <font-awesome-icon :icon="faLocation" class="icon-location" />
-            <p @click="copyToClipboard" class="copyable">
+            <p @click="copyToClipboard" class="copyable normal-text">
               Calle República de Cuba 653 sur y Ave. Insurgentes. Col.
               Ex-Hipódromo., Ciudad Juárez, Mexico
             </p>
             <a
               target="_blank"
               href="https://www.google.com.mx/maps/search/Calle+Rep%C3%BAblica+de+Cuba+653+sur+y+Ave.+Insurgentes.+Col.+Ex-Hip%C3%B3dromo.+32330+Ciudad+Ju%C3%A1rez,+M%C3%A9xico@31.7321784,-106.4643818,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
-              ><button class="btn primary-button">
+              ><button class="btn primary-button normal-text">
                 Abrir en Google Maps
               </button></a
             >
@@ -51,18 +52,26 @@ function copyToClipboard() {
 <style scoped>
 .cont-map {
   display: flex;
-  gap: 50px;
   justify-content: space-between;
-  margin-top: 200px;
+  gap: 32px;
+}
+@media screen and (max-width: 800px) {
+.cont-map {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  flex-direction: column-reverse;
+}
 }
 
+
 .cont-map-buttons {
-  padding: 0 20%;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  gap: 30px;
+  gap: 32px;
+
 }
 
 .copyable {
@@ -76,7 +85,7 @@ function copyToClipboard() {
 }
 
 .icon-location {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 90px;
 }
 </style>

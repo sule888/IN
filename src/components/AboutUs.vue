@@ -8,7 +8,7 @@
      
     >
       <img v-if="item.img" :src="item.img" :alt="item.alt" />
-      <p v-else class="normal-text">{{ item.text }}</p>
+      <p v-else class="normal-text" style="color: white;">{{ item.text }}</p>
     </div>
   </section>
 

@@ -2,7 +2,7 @@
   <div class="profile-card">
     <img :src="image" alt="Perfil" class="profile-image" />
     <p class="subtitles">{{ name }}</p>
-    <p class="normal-text">{{ description }}</p>
+    <p class="normal-text" style="color: white;">{{ description }}</p>
   </div>
 </template>
 
@@ -20,13 +20,14 @@ defineProps({
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  max-width: 250px;
+  max-width: 200px;
+  min-width: auto;
   width: 100%;
   padding: 16px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: transparent;
   text-align: center;
+  color: white;
 }
 
 .profile-image {

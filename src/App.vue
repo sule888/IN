@@ -28,15 +28,17 @@ import HeroIcons from "./components/HeroIcons.vue";
     <!-- <Testimonios></Testimonios> -->
     <Experience></Experience>
     <div class="margin">
+      <div class="separation-category-margin"></div>
       <Mapa></Mapa>
+      <div class="separation-category-margin"></div>
+      <Contactanos></Contactanos>
     </div>
-    <Contactanos></Contactanos>
     <Footer></Footer>
   </div>
 </template>
 <style>
 .separation-category-margin{
-  margin:72px 0px ;
+  margin:128px 0px ;
 } 
 .main-cont {
   display: flex;

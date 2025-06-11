@@ -1,42 +1,33 @@
 <template>
-    <section>
-      <div class="cont-contact">
-        <div class="margin">
-          <h1>Contactanos</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quam
-            officia sunt adipisci? Et, velit, voluptatum exercitationem eius vel
-            repellendus alias doloremque officia eligendi fugiat corporis.
-            Tempore voluptas unde neque sed ipsam cum ipsum consectetur eveniet
-            vel recusandae, praesentium nobis quisquam quaerat amet a? Saepe
-            consequuntur error eligendi, dolore optio quidem libero rem,
-            excepturi iure, repellat delectus accusamus pariatur explicabo?
-          </p>
-          <div class="timeline">
-            <div class="line"></div>
-            <div v-for="(step, index) in steps" :key="index" class="step">
-              <div class="icon glow">
-                <font-awesome-icon :icon="step.name" class="icon-timeline" />
-              </div>
-              <p>{{ step.text }}</p>
-            </div>
+  <section>
+    <div class="cont-contact">
+      <h1 class="titles">Contactanos</h1>
+      <p class="normal-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quam
+        officia sunt adipisci? Et, velit, voluptatum exercitationem eius vel
+        repellendus alias doloremque officia eligendi fugiat corporis. Tempore
+        voluptas unde neque sed ipsam cum ipsum consectetur eveniet vel
+        recusandae, praesentium nobis quisquam quaerat amet a? Saepe
+        consequuntur error eligendi, dolore optio quidem libero rem, excepturi
+        iure, repellat delectus accusamus pariatur explicabo?
+      </p>
+      <div class="timeline">
+        <div class="line"></div>
+        <div v-for="(step, index) in steps" :key="index" class="step">
+          <div class="icon glow">
+            <font-awesome-icon :icon="step.name" class="icon-timeline" />
           </div>
-          <div class="cont-contact-icons-media">
-            <div class="cont-media">
-              <font-awesome-icon :icon="faWhatsapp" class="icon-location" />
-              656-5656-5656
-            </div>
-            <div class="cont-media">
-              <font-awesome-icon
-                :icon="faSquareEnvelope"
-                class="icon-location"
-              />
-              correo.correo@gmail.com
-            </div>
-          </div>
+          <p class="normal-text">{{ step.text }}</p>
         </div>
       </div>
-    </section>
+      <div class="cont-contact-icons-media">
+        <div v-for="(icon, index) in icons" :key="index">
+          <a :href="icon.href" target="_blank">
+            <font-awesome-icon :icon="icon.name" class="icon titles" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>
@@ -46,6 +37,22 @@ import {
   faPeopleGroup,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faWhatsapp,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
+const icons = [
+  {
+    name: faWhatsapp,
+    href: "https://www.facebook.com/InteligenciainfantilIN",
+    title: "Whatsapp",
+  },
+  {
+    name: faFacebook,
+    href: "https://www.facebook.com/InteligenciainfantilIN",
+    title: "Facebook",
+  },
+];
 const steps = [
   {
     name: faPhone,
@@ -62,16 +69,12 @@ const steps = [
 
 <style scoped>
 .cont-contact {
-  margin: 100px 0 0 0;
   display: flex;
-  padding: 50px 0;
   flex-direction: column;
-  gap: 20px;
-  background-color: #c4d7f9;
+  background-color: transparent;
+  gap: 16px;
 }
-.margin {
-  margin: 0 5%;
-}
+
 .timeline {
   position: relative;
   display: flex;
@@ -82,14 +85,14 @@ const steps = [
   max-width: 1200px;
   flex-wrap: wrap;
 }
+
 .line {
   position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: orange;
-  /* Ajusta este color según tus necesidades */
+  background-color: var(--primary-color);
   z-index: 1;
 }
 
@@ -97,20 +100,15 @@ const steps = [
   position: relative;
   text-align: center;
   z-index: 2;
-  margin: 10px;
+  margin: 16px;
   flex: 1;
   min-width: 100px;
   max-width: 300px;
 }
+
 .step .icon.glow {
   box-shadow: 90px var(--primary-color);
 }
-
-.step p {
-  margin: 0;
-  font-size: 14px;
-}
-
 
 .icon-timeline {
   font-size: 35px;
@@ -118,6 +116,7 @@ const steps = [
   align-items: center;
   justify-content: center;
   margin: 0 auto 50px auto;
+  color: var(--primary-color);
 }
 
 .cont-contact-icons-media {
@@ -140,6 +139,7 @@ const steps = [
   color: var(--secondary-color);
   font-size: 90px;
 }
+
 @media (max-width: 768px) {
   .timeline {
     flex-direction: column;
@@ -153,5 +153,4 @@ const steps = [
     margin-bottom: 20px;
   }
 }
-
 </style>
