@@ -41,7 +41,7 @@ import HeroIcons from "./components/HeroIcons.vue";
 </template>
 <style>
 .separation-category-margin {
-  margin: 128px 0px;
+  margin: 64px 0px;
 }
 
 .main-cont {
