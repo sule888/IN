@@ -3,10 +3,21 @@
     <img src="@/imgs/Heroimg.jpg" alt="Hero" class="hero-img" />
     <div class="cont-hero-text">
       <h1 class="titles" style="color: white;">Centro de Educación Integral Humanista IN</h1>
-      <button class=" btn-contacto primary-button ">Contáctanos</button>
+      <button @click="scrollToContact" class="btn-contacto primary-button">
+        Contáctanos
+      </button>
     </div>
   </section>
 </template>
+<script setup>
+const scrollToContact = () => {
+  const section = document.getElementById("contacto");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+</script>
 
 <style scoped>
 .cont-hero {

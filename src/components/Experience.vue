@@ -1,12 +1,12 @@
 <template>
   <section class="backgroud-cont-experience">
-    <h1 class="titles" style="color: white; margin:5%;">Conoce a nuestro equipo</h1>
+    <h1 class="titles" style="color: white; margin: 5% 5% 0; ">Conoce a nuestro equipo</h1>
     <div class="cont-experience">
       <div><img src="@/imgs/experience-profile.png" alt="" />
       </div>
       <div class="text-experience-cont">
         <h1 class="subtitles">Clay Gonzalez</h1>
-        <p class="normal-text" style="color: white;">
+        <p class="normal-text" style="color: white; text-align: center;">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
           consequuntur corporis debitis! A, minima, molestiae vero laboriosam
           repellendus in ratione tempora blanditiis iste sit iusto fugiat
@@ -48,7 +48,7 @@ import ProfileCard from './ProfileCard.vue';
   margin: 0 5%;
   flex-direction: row;
   display: flex;
-  column-gap: 16px;
+  column-gap: 32px;
   justify-content: space-around;
   align-items: center;
 }
@@ -56,16 +56,16 @@ import ProfileCard from './ProfileCard.vue';
 .cont-experience img {
   z-index: 1;
   height: 480px;
-  margin-bottom: 60px;
 }
 
 .text-experience-cont {
   color: white;
-  padding: 0 50px;
+  padding: 0 ;
   display: flex;
   flex-direction: column;
   gap: 32px;
   flex: 1 1 40%;
+  align-items: center;
 }
 
 .btn-pefil-principal {
@@ -85,24 +85,25 @@ import ProfileCard from './ProfileCard.vue';
   }
 
   .cont-experience img {
-    width: 200px;
+    width: 320px;
     height: auto;
-    margin-bottom: 60px;
+
   }
 
 
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 640px) {
   .cont-experience {
     height: auto;
     flex-direction: column;
+    gap: 32px;
   }
 
   .cont-experience img {
     width: 200px;
     height: auto;
-    margin-bottom: 60px;
+
   }
 
 }

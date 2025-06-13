@@ -15,10 +15,11 @@
         <img :src="card.img" :alt="card.alt" class="cont-serivce-card-img" />
         <p class="service-card-text normal-text">{{ card.text }}</p>
         <div class="card-buttons-cont" v-for="(button, bIndex) in card.buttons" :key="bIndex">
-          <button :onclick="button.action" :class="button.class">
+          <button @click="handleButtonAction(button.action, card)" :class="button.class">
             {{ button.buttonTitle }}
           </button>
         </div>
+
       </div>
     </div>
     <div class="cont-buton-mas">
@@ -39,7 +40,6 @@ import lenguaje from "@/imgs/img-web/lenguaje.jpg";
 import tea from "@/imgs/img-web/tea.jpg";
 import tdha from "@/imgs/img-web/tdha.jpg";
 import tda from "@/imgs/img-web/tda.jpg";
-
 const servicesCards = [
   {
     title: "Estimulacion del lenguaje",
@@ -50,11 +50,11 @@ const servicesCards = [
     buttons: [
       {
         buttonTitle: "Quiero contactarme",
-        action: "openFile",
+        action: "scrollToContact",
         class: " btn primary-button",
       },
       {
-        buttonTitle: "Quiero conocer mas",
+        buttonTitle: "Ver PDF",
         action: "openFile",
         class: " btn secondary-button",
       },
@@ -69,11 +69,11 @@ const servicesCards = [
     buttons: [
       {
         buttonTitle: "Quiero contactarme",
-        action: "openFile",
+        action: "scrollToContact",
         class: " btn primary-button",
       },
       {
-        buttonTitle: "Quiero conocer mas",
+        buttonTitle: "Ver PDF",
         action: "openFile",
         class: " btn secondary-button",
       },
@@ -88,11 +88,11 @@ const servicesCards = [
     buttons: [
       {
         buttonTitle: "Quiero contactarme",
-        action: "openFile",
+        action: "scrollToContact",
         class: "btn primary-button",
       },
       {
-        buttonTitle: "Quiero conocer mas",
+        buttonTitle: "Ver PDF",
         action: "openFile",
         class: " btn secondary-button",
       },
@@ -107,11 +107,11 @@ const servicesCards = [
     buttons: [
       {
         buttonTitle: "Quiero contactarme",
-        action: "openFile",
+        action: "scrollToContact",
         class: "btn primary-button",
       },
       {
-        buttonTitle: "Quiero conocer mas",
+        buttonTitle: "Ver PDF",
         action: "openFile",
         class: " btn secondary-button",
       },
@@ -126,11 +126,11 @@ const servicesCards = [
     buttons: [
       {
         buttonTitle: "Quiero contactarme",
-        action: "openFile",
+        action: "scrollToContact",
         class: "btn primary-button",
       },
       {
-        buttonTitle: "Quiero conocer mas",
+        buttonTitle: "Ver PDF",
         action: "openFile",
         class: " btn secondary-button",
       },
@@ -145,11 +145,11 @@ const servicesCards = [
     buttons: [
       {
         buttonTitle: "Quiero contactarme",
-        action: "openFile",
+        action: "scrollToContact",
         class: "btn primary-button",
       },
       {
-        buttonTitle: "Quiero conocer mas",
+        buttonTitle: "Ver PDF",
         action: "openFile",
         class: " btn secondary-button",
       },
@@ -164,11 +164,11 @@ const servicesCards = [
     buttons: [
       {
         buttonTitle: "Quiero contactarme",
-        action: "openFile",
+        action: "scrollToContact",
         class: "btn primary-button",
       },
       {
-        buttonTitle: "Quiero conocer mas",
+        buttonTitle: "Ver PDF",
         action: "openFile",
         class: " btn secondary-button",
       },
@@ -182,6 +182,27 @@ const checkViewport = () => {
   isMobile.value = window.innerWidth <= 631;
 };
 
+const openFile = (card) => {
+  if (card.file) {
+    window.open(card.file, "_blank");
+  } else {
+    alert("Archivo no disponible.");
+  }
+};
+const scrollToContact = () => {
+  const section = document.getElementById("contacto");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+const handleButtonAction = (action, card) => {
+  if (action === "scrollToContact") {
+    scrollToContact();
+  } else if (action === "openFile") {
+    openFile(card);
+  }
+};
 onMounted(() => {
   checkViewport();
   window.addEventListener("resize", checkViewport);

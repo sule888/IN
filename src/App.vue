@@ -31,15 +31,19 @@ import HeroIcons from "./components/HeroIcons.vue";
       <div class="separation-category-margin"></div>
       <Mapa></Mapa>
       <div class="separation-category-margin"></div>
-      <Contactanos></Contactanos>
     </div>
+    <div class="margin" id="contacto">
+      <Contactanos />
+    </div>
+    <div class="separation-category-margin"></div>
     <Footer></Footer>
   </div>
 </template>
 <style>
-.separation-category-margin{
-  margin:128px 0px ;
-} 
+.separation-category-margin {
+  margin: 128px 0px;
+}
+
 .main-cont {
   display: flex;
   flex-direction: column;

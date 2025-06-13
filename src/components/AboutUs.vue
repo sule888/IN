@@ -1,5 +1,5 @@
 <template>
-  <section class="about-us-grid">
+  <div class="about-us-grid">
     <div
       v-for="(item, index) in itemsAboutUs"
       :key="index"
@@ -10,7 +10,7 @@
       <img v-if="item.img" :src="item.img" :alt="item.alt" />
       <p v-else class="normal-text" style="color: white;">{{ item.text }}</p>
     </div>
-  </section>
+  </div>
 
   <div
     v-if="showModal"

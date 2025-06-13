@@ -1,5 +1,5 @@
 <template>
-      <section class="main-cont">
+      <div class="main-cont">
         <h2 class="subtitles">
           Visitanos y siguenos en nuestras redes sociales:
         </h2>
@@ -10,7 +10,7 @@
             /></a>
           </div>
         </div>
-      </section>
+      </div>
 </template>
 
 <script setup>
