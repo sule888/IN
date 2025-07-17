@@ -39,7 +39,7 @@ import {
 const icons = [
   {
     name: faWhatsapp,
-    href: "https://www.facebook.com/InteligenciainfantilIN",
+    href: "https://wa.me/526562723100",
     title: "Whatsapp",
   },
   {

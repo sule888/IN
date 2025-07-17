@@ -17,14 +17,14 @@
       </div>
 
     </div>
-    <div class="team-container">
+    <!-- <div class="team-container">
       <ProfileCard image="src\imgs\img-web\pefirls.jpg" name="Juan Pérez"
         description="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis..." />
       <ProfileCard image="src\imgs\img-web\pefirls.jpg" name="Jane Doe"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio." />
       <ProfileCard image="src\imgs\img-web\pefirls.jpg" name="Juan Pérez"
         description="Dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-    </div>
+    </div> -->
   </section>
 </template>
 
@@ -66,6 +66,7 @@ import ProfileCard from './ProfileCard.vue';
   gap: 32px;
   flex: 1 1 40%;
   align-items: center;
+  margin-bottom: 32px;
 }
 
 .btn-pefil-principal {

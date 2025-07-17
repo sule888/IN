@@ -11,11 +11,16 @@ import Mapa from "./components/Mapa.vue";
 import Contactanos from "./components/Contactanos.vue";
 import Footer from "./components/Footer.vue";
 import HeroIcons from "./components/HeroIcons.vue";
+import EstanciaInfantil from "./components/EstanciaInfantil.vue";
+
 </script>
 <template>
   <div class="main-cont">
     <HeroIcons></HeroIcons>
+    <div class="separation-category-margin" id="estancia"></div>
+      <EstanciaInfantil></EstanciaInfantil>
     <div class="margin">
+      
       <div class="separation-category-margin"></div>
       <AboutUs></AboutUs>
       <div class="separation-category-margin"></div>
@@ -28,8 +33,8 @@ import HeroIcons from "./components/HeroIcons.vue";
     <!-- <Testimonios></Testimonios> -->
     <Experience></Experience>
     <div class="margin">
-      <div class="separation-category-margin"></div>
-      <Mapa></Mapa>
+      <div class="separation-category-margin" ></div>
+      <Mapa id="mapa"></Mapa>
       <div class="separation-category-margin"></div>
     </div>
     <div class="margin" id="contacto">

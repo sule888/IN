@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="cont">
-            <Hero></Hero>
+        <Hero></Hero>
             <div class="margin"><Icons></Icons></div>
         </div>
     </div>

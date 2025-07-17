@@ -54,8 +54,8 @@ import { faWhatsapp, faFacebook } from "@fortawesome/free-brands-svg-icons";
 const icons = [
   {
     name: faWhatsapp,
-    href: "https://wa.me/526568268149",
-    title: "656-826-8149",
+    href: "https://wa.me/526562723100",
+    title: "+52 1 656 272 3100",
   },
   {
     name: faFacebook,
