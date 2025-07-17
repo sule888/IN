@@ -3,8 +3,7 @@
     <div class="text-cont">
       <h1 class="titles">Nuestros servicios</h1>
       <p class="normal-text">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam illum
-        quod maiores quasi vitae quibusdam sit cupiditate ea dolor eaque.
+        En nuestro espacio reconocemos que cada infancia es única y valiosa. Por eso, brindamos acompañamiento personalizado que respeta los ritmos, intereses y necesidades de cada niña y niño, ofreciendo estrategias que favorecen su desarrollo integral en un entorno empático, estructurado y estimulante.
       </p>
     </div>
 

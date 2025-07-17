@@ -1,21 +1,31 @@
 <template>
   <section class="backgroud-cont-experience">
-    <h1 class="titles" style="color: white; margin: 5% 5% 0; ">Conoce a nuestro equipo</h1>
+    <h1 class="titles" style="color: white; margin: 5% 5% 0">
+      Conoce a nuestro equipo
+    </h1>
     <div class="cont-experience">
-      <div><img src="@/imgs/experience-profile.png" alt="" />
-      </div>
+      <div><img src="@/imgs/experience-profile.png" alt="" /></div>
       <div class="text-experience-cont">
         <h1 class="subtitles">Clay Gonzalez</h1>
-        <p class="normal-text" style="color: white; text-align: center;">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-          consequuntur corporis debitis! A, minima, molestiae vero laboriosam
-          repellendus in ratione tempora blanditiis iste sit iusto fugiat
-          officia ullam cum excepturi molestias.
+        <p class="normal-text" style="color: white; text-align: center">
+          Con más de 10 años de experiencia en el ámbito educativo y del
+          desarrollo infantil, Clay Gonzalez se ha consolidado
+          como una figura en la promoción de entornos inclusivos y
+          empáticos. Ha impartido múltiples conferencias
+          enfocadas en estrategias para comprender y acompañar a infancias
+          neurodivergentes, así como en el diseño de espacios que estimulan la
+          creatividad, el desarrollo emocional y el aprendizaje activo.Su enfoque parte de la empatía, el
+          juego, el movimiento y la aceptación positiva incondicional,
+          promoviendo así un acompañamiento respetuoso y significativo.
         </p>
-        <a class="btn btn-pefil-principal" href="https://www.linkedin.com/feed/" target="_blank"
-          rel="noopener noreferrer">Conocer mas</a>
+        <a
+          class="btn btn-pefil-principal"
+          href="https://www.linkedin.com/feed/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Conocer mas</a
+        >
       </div>
-
     </div>
     <!-- <div class="team-container">
       <ProfileCard image="src\imgs\img-web\pefirls.jpg" name="Juan Pérez"
@@ -32,7 +42,7 @@
  -->
 
 <script setup>
-import ProfileCard from './ProfileCard.vue';
+import ProfileCard from "./ProfileCard.vue";
 </script>
 
 <style scoped>
@@ -60,7 +70,7 @@ import ProfileCard from './ProfileCard.vue';
 
 .text-experience-cont {
   color: white;
-  padding: 0 ;
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -88,10 +98,7 @@ import ProfileCard from './ProfileCard.vue';
   .cont-experience img {
     width: 320px;
     height: auto;
-
   }
-
-
 }
 
 @media screen and (max-width: 640px) {
@@ -104,9 +111,7 @@ import ProfileCard from './ProfileCard.vue';
   .cont-experience img {
     width: 200px;
     height: auto;
-
   }
-
 }
 
 .team-container {
@@ -121,7 +126,6 @@ import ProfileCard from './ProfileCard.vue';
   .team-container {
     flex-direction: column;
     align-items: center;
-
   }
 }
 </style>
